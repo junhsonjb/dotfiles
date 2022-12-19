@@ -3,6 +3,8 @@
 
 # (TODO: add more aliases/functions for common git and aws-vault commands)
 
+source ~/.config/zsh/.figma/aliasrc.zsh
+
 # Miscellaneous 
 # ---------------
 alias cl="clear"
