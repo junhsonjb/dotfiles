@@ -1,0 +1,5 @@
+require('config.bufferline')
+require('config.devicons')
+require('config.feline')
+require('config.gitsigns')
+require('config.lsp')
