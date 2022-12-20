@@ -13,6 +13,7 @@ local on_attach_fn = function(client, buf_number)
 
     keymap('gd', '<cmd>lua vim.lsp.buf.definition()<cr>')
     keymap('K',  '<cmd>lua vim.lsp.buf.hover()<cr>')
+    keymap('F',  '<cmd>lua vim.lsp.buf.format()<cr>')
 
 end
 
