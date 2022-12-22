@@ -28,6 +28,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
 Plug 'simrat39/rust-tools.nvim'
+Plug 'Rigellute/rigel'
 
 call plug#end()
 
@@ -41,7 +42,8 @@ source ~/.config/nvim/keymaps.vim
 lua require('config')
 
 " colorscheme koehler
-colorscheme dracula
+" colorscheme dracula
+colorscheme rigel
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
