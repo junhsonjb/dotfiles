@@ -27,6 +27,7 @@ Plug 'fladson/vim-kitty'
 Plug 'voldikss/vim-floaterm'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
+Plug 'simrat39/rust-tools.nvim'
 
 call plug#end()
 
