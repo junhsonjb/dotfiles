@@ -29,6 +29,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
 Plug 'simrat39/rust-tools.nvim'
 Plug 'Rigellute/rigel'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
