@@ -1,14 +1,9 @@
-font_family JetBrains Mono
-bold_font JetBrains Mono Bold
-italic_font JetBrains Mono Italic
-bold_italic_font JetBrains Mono Bold Italic
+font_family SauceCodePro Nerd Font
+bold_font SauceCodePro Nerd Font Bold
+italic_font SauceCodePro Nerd Font Italic
+bold_italic_font SauceCodePro Nerd Font Semibold Italic
 font_size 18
 
 # KITTY theme
 include current-theme.conf
 
-
-# BEGIN_KITTY_THEME
-# Tokyo Night Day
-include current-theme.conf
-# END_KITTY_THEME

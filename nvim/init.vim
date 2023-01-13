@@ -21,8 +21,7 @@ Plug 'vim-scripts/loremipsum'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-fugitive'
 Plug 'APZelos/blamer.nvim'
-" Plug 'Mofiqul/dracula.nvim' " idk why but gives error
-Plug 'dracula/vim' " vimscript version --looks same
+Plug 'Mofiqul/dracula.nvim'
 Plug 'fladson/vim-kitty'
 Plug 'voldikss/vim-floaterm'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
@@ -30,8 +29,13 @@ Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
 Plug 'simrat39/rust-tools.nvim'
 Plug 'Rigellute/rigel'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'folke/trouble.nvim'
 
 call plug#end()
+
+" colorscheme koehler
+colorscheme dracula
+" colorscheme rigel
 
 " settings
 source ~/.config/nvim/settings.vim
@@ -41,10 +45,6 @@ source ~/.config/nvim/keymaps.vim
 
 " require contents of $NVIM_DIR/lua/config (using init.lua file)
 lua require('config')
-
-" colorscheme koehler
-" colorscheme dracula
-colorscheme rigel
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
