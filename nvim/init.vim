@@ -38,13 +38,14 @@ colorscheme dracula
 " colorscheme rigel
 
 " settings
-source ~/.config/nvim/settings.vim
+" source ~/.config/nvim/settings.vim
 
 " keymaps
-source ~/.config/nvim/keymaps.vim
+" source ~/.config/nvim/keymaps.vim
 
 " require contents of $NVIM_DIR/lua/config (using init.lua file)
 lua require('config')
+lua require('user')
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
