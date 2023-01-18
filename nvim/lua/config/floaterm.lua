@@ -1,0 +1,4 @@
+-- TODO
+-- * change floaterm_width to be .80
+-- * change floaterm_height to be .85
+-- * once ready, include this file in init.lua
