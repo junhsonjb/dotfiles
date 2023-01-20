@@ -1,4 +1,2 @@
--- TODO
--- * change floaterm_width to be .80
--- * change floaterm_height to be .85
--- * once ready, include this file in init.lua
+vim.g.floaterm_width = 0.80
+vim.g.floaterm_height = 0.85
