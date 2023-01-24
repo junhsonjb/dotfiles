@@ -16,7 +16,7 @@ vim.keymap.set('n', '<C-P>', ":lua require('fzf-lua').files()<CR>", { noremap = 
 vim.keymap.set('n', '<leader>g', ":lua require('fzf-lua').grep()<CR><CR>", { noremap = true })
 
 -- Quickly toggle line blame
-vim.keymap.set('n', '<C-B>', ':Gitsigns toggle_current_line_blame<CR>', { noremap = true })
+vim.keymap.set('n', '<C-B>', ':BlamerToggle<CR>', { noremap = true })
 
 -- Quickly toggle floaterm
 vim.keymap.set('n', '<C-T>', ':FloatermToggle mini<CR>', { noremap = true })
