@@ -14,3 +14,9 @@ vim.opt.number = true
 vim.opt.scrolloff = 8
 
 -- TODO: make highlights italic
+-- (this "works" but resets all other comment style defaults)
+-- (also it DOESN'T work! comments are still not italic!)
+-- vim.api.nvim_set_hl(0, 'Comment', { 
+--     fg = "gray", -- I don't like this, would rather use colorscheme defaults
+--     italic = true,
+-- })
