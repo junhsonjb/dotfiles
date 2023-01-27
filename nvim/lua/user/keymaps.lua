@@ -13,7 +13,7 @@ vim.keymap.set('n', '<leader>-', ':split<CR>', { noremap = true })
 
 -- Quick access to fzf
 vim.keymap.set('n', '<C-P>', ":lua require('fzf-lua').files()<CR>", { noremap = true })
-vim.keymap.set('n', '<leader>g', ":lua require('fzf-lua').grep()<CR><CR>", { noremap = true })
+vim.keymap.set('n', '<leader>g', ":lua require('fzf-lua').grep()<CR>", { noremap = true })
 
 -- Quickly toggle line blame
 vim.keymap.set('n', '<C-B>', ':BlamerToggle<CR>', { noremap = true })
