@@ -23,7 +23,7 @@ vim.keymap.set('n', '<C-T>', ':FloatermToggle mini<CR>', { noremap = true })
 vim.keymap.set('t', '<C-T>', '<C-\\><C-n>:FloatermToggle<CR>', { noremap = true })
 
 -- Quickly go into Normal mode when in Terminal
-vim.keymap.set('t', '<leader>,', '<C-\\><C-n>', { noremap = true })
+vim.keymap.set('t', '<C-j><C-k>', '<C-\\><C-n>', { noremap = true })
 
 -- Easily scroll buffers
 vim.keymap.set('n', '<leader>p', ':bp<CR>', { noremap = true })
