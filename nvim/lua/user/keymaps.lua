@@ -34,3 +34,6 @@ vim.keymap.set('n', '<leader>q', ':Sayonara<CR>', { noremap = true })
 
 -- View LSP errors for file
 vim.keymap.set('n', '<leader>x', ':TroubleToggle<CR>', { noremap = true })
+
+-- Open Buffer Manager
+vim.keymap.set('n', '<leader>b', ':lua require("buffer_manager.ui").toggle_quick_menu()<CR>', { noremap = true })

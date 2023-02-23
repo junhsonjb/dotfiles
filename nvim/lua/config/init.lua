@@ -1,4 +1,5 @@
 require('config.bufferline')
+require('config.buffer_manager')
 require('config.devicons')
 require('config.feline')
 require('config.gitsigns')

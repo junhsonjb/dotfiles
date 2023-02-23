@@ -30,6 +30,8 @@ Plug 'simrat39/rust-tools.nvim'
 Plug 'Rigellute/rigel'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'folke/trouble.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'j-morano/buffer_manager.nvim'
 
 call plug#end()
 
