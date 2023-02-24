@@ -46,7 +46,7 @@ colorscheme dracula
 " source ~/.config/nvim/keymaps.vim
 
 " require contents of $NVIM_DIR/lua/config (using init.lua file)
-lua require('config')
+lua require('plugins')
 lua require('user')
 
 let g:go_def_mode='gopls'
