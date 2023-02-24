@@ -1,6 +1,6 @@
 -- Welcome to my nvim config, now in lua!
 
-vim.cmd('colorscheme dracula')
+-- vim.cmd('colorscheme dracula')
 
 require('user.settings')
 require('user.keymaps')
@@ -19,4 +19,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup('plugins')
+-- require('lazy').setup('plugins')
