@@ -33,6 +33,10 @@ Plug 'folke/trouble.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'j-morano/buffer_manager.nvim'
 
+" Screenwriting Plugins
+Plug 'kblin/vim-fountain'
+Plug 'smithbm2316/centerpad.nvim'
+
 call plug#end()
 
 " colorscheme koehler
