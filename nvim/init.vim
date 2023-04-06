@@ -33,7 +33,7 @@ Plug 'folke/trouble.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'j-morano/buffer_manager.nvim'
 
-" Screenwriting Plugins
+" writing tools 
 Plug 'kblin/vim-fountain'
 Plug 'smithbm2316/centerpad.nvim'
 
