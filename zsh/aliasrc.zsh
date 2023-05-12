@@ -39,3 +39,7 @@ function weather() {
 
     eval "curl http://wttr.in/${city}"
 }
+
+function pdf() {
+    eval "/usr/local/lib/node_modules/afterwriting/awc.js --source $1 --pdf $2"
+}
