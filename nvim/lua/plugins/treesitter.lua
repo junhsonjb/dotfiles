@@ -6,5 +6,5 @@ ts.setup {
         additional_vim_regex_highlighting = false,
     },
     indent = { enable = true },
-    ensure_installed = { "help", "go", "lua", "ruby", "rust" },
+    ensure_installed = { "vimdoc", "go", "lua", "ruby", "rust" },
 }

@@ -1,0 +1,5 @@
+-- This will be where I add custom functions for my nvim setup!
+-- I was going to some functionality to send github links to my clipboard, but I found the gitlinker
+-- plugin, which is currently installed.
+--
+-- I may still write up the functionality on my own for learning's sake.
