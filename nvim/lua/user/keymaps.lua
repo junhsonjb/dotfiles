@@ -17,7 +17,7 @@ vim.keymap.set('n', '<C-P>', ":lua require('fzf-lua').files()<CR>", { noremap = 
 vim.keymap.set('t', '<C-P>', "<C-\\><C-n>:close<CR>", { noremap = true })
 
 -- Grep through codebase (starting from directory where vim was opened)
-vim.keymap.set('n', '<leader>g', ":lua require('fzf-lua').grep()<CR>", { noremap = true })
+vim.keymap.set('n', '<leader>g', ":lua require('fzf-lua').live_grep()<CR>", { noremap = true })
 
 -- Quickly toggle line blame
 vim.keymap.set('n', '<C-B>', ':BlamerToggle<CR>', { noremap = true })
