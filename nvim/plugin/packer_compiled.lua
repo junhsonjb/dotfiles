@@ -79,16 +79,6 @@ _G.packer_plugins = {
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/FTerm.nvim",
     url = "https://github.com/numToStr/FTerm.nvim"
   },
-  ["blamer.nvim"] = {
-    loaded = true,
-    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/blamer.nvim",
-    url = "https://github.com/APZelos/blamer.nvim"
-  },
-  ["buffer_manager.nvim"] = {
-    loaded = true,
-    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/buffer_manager.nvim",
-    url = "https://github.com/j-morano/buffer_manager.nvim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -98,11 +88,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
-  },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["feline.nvim"] = {
     loaded = true,
@@ -154,11 +139,6 @@ _G.packer_plugins = {
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  rigel = {
-    loaded = true,
-    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/rigel",
-    url = "https://github.com/Rigellute/rigel"
-  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
@@ -178,11 +158,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/vim-delve",
     url = "https://github.com/sebdah/vim-delve"
-  },
-  ["vim-floaterm"] = {
-    loaded = true,
-    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/vim-floaterm",
-    url = "https://github.com/voldikss/vim-floaterm"
   },
   ["vim-fugitive"] = {
     loaded = true,

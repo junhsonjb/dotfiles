@@ -20,7 +20,7 @@ vim.keymap.set('t', '<C-P>', "<C-\\><C-n>:close<CR>", { noremap = true })
 vim.keymap.set('n', '<leader>g', ":lua require('fzf-lua').live_grep()<CR>", { noremap = true })
 
 -- Quickly toggle line blame
-vim.keymap.set('n', '<C-B>', ':BlamerToggle<CR>', { noremap = true })
+vim.keymap.set('n', '<C-B>', ':Gitsigns toggle_current_line_blame<CR>', { noremap = true })
 
 -- Quickly toggle floating terminal
 vim.keymap.set('n', '<c-t>', ":lua require('FTerm').toggle()<CR>", { noremap = true })
@@ -40,5 +40,4 @@ vim.keymap.set('n', '<leader>q', ':Sayonara<CR>', { noremap = true })
 vim.keymap.set('n', '<leader>x', ':TroubleToggle<CR>', { noremap = true })
 
 -- Open Buffer Manager
--- vim.keymap.set('n', '<leader>b', ':lua require("buffer_manager.ui").toggle_quick_menu()<CR>', { noremap = true })
 vim.keymap.set('n', '<leader>b', ':FzfLua buffers<CR>', { noremap = true })

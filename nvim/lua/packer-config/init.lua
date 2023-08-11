@@ -11,46 +11,58 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+-- For plugin-specific configs, see .config/nvim/lua/plugins/PLUGIN_NAME.lua
+
 return require('packer').startup(function(use)
+  -- Packer
   use 'wbthomason/packer.nvim'
-  -- My plugins here
+
+  -- Dependencies
   use 'nvim-lua/plenary.nvim'
-  use 'feline-nvim/feline.nvim'
-  use 'lewis6991/gitsigns.nvim'
   use 'kyazdani42/nvim-web-devicons'
-  use { "ibhagwan/fzf-lua",
-    -- optional for icon support
-    requires = { "nvim-tree/nvim-web-devicons" }
-  }
-  use 'sebdah/vim-delve'
-  use 'neovim/nvim-lspconfig'
+  use 'kana/vim-textobj-user' -- also use to create text objects
+
+  -- Git stuff
+  use 'lewis6991/gitsigns.nvim'
   use 'tpope/vim-commentary'
   use 'tpope/vim-rhubarb'
-  use 'kana/vim-textobj-user'
-  use 'kana/vim-textobj-entire'
-  use 'vim-scripts/loremipsum'
-  use 'christoomey/vim-tmux-navigator'
   use 'tpope/vim-fugitive'
-  use 'APZelos/blamer.nvim'
-  use 'Mofiqul/dracula.nvim'
-  use 'fladson/vim-kitty'
-  use 'voldikss/vim-floaterm'
-  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-  use 'mhinz/vim-sayonara'
-  use 'simrat39/rust-tools.nvim'
-  use 'Rigellute/rigel'
-  use {
-    'nvim-treesitter/nvim-treesitter',
-     run = function()
-	local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-	ts_update()
-     end,
-  }
-  use 'folke/trouble.nvim'
-  use 'j-morano/buffer_manager.nvim'
   use 'ruifm/gitlinker.nvim'
+
+  -- Language Specific
+  use 'sebdah/vim-delve' -- golang debugger, delve
+  use 'simrat39/rust-tools.nvim'
+
+  -- LSP (Language Server Protocol)
+  use 'neovim/nvim-lspconfig'
+    use {
+      'nvim-treesitter/nvim-treesitter',
+      run = function()
+        local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+        ts_update()
+      end,
+    }
+
+  -- Theme(s)
+  use { 'catppuccin/nvim', as = 'catppuccin' } -- what I'm rocking with
+  -- use 'Mofiqul/dracula.nvim'
+  -- use 'Rigellute/rigel'
+
+  -- Appearance
+  use 'fladson/vim-kitty'
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use 'feline-nvim/feline.nvim'
+
+  -- Quality of life
+  use {'ibhagwan/fzf-lua', requires = 'nvim-tree/nvim-web-devicons'}
   use 'numToStr/FTerm.nvim'
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use 'folke/trouble.nvim'
+  use 'mhinz/vim-sayonara' -- consider finding/writeing lua alternative 
+
+  -- Miscellaneous
+  use 'kana/vim-textobj-entire' -- entire file text object
+  use 'vim-scripts/loremipsum' -- add lorem ipsum text
+  use 'christoomey/vim-tmux-navigator' -- switch between tmux/vim panes/windows
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
