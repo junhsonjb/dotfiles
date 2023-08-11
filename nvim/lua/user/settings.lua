@@ -16,6 +16,10 @@ vim.opt.clipboard = 'unnamed'
 vim.opt.mouse = 'nv'
 vim.opt.number = true
 vim.opt.scrolloff = 8
+vim.opt.laststatus = 3
 
 vim.cmd.colorscheme([[catppuccin-mocha]])
 
+-- Configure cursorline highlighting for the active buffer only
+vim.cmd([[autocmd BufEnter,WinEnter * setlocal cursorline]])
+vim.cmd([[autocmd BufLeave,WinLeave * setlocal nocursorline]])
