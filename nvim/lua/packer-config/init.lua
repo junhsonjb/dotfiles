@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
         ts_update()
       end,
     }
+  use 'nvim-treesitter/nvim-treesitter-context'
 
   -- Theme(s)
   use { 'catppuccin/nvim', as = 'catppuccin' } -- what I'm rocking with
@@ -59,6 +60,7 @@ return require('packer').startup(function(use)
   use 'numToStr/FTerm.nvim'
   use 'folke/trouble.nvim'
   use 'mhinz/vim-sayonara' -- consider finding/writeing lua alternative 
+  use 'github/copilot.vim'
 
   -- Miscellaneous
   use 'kana/vim-textobj-entire' -- entire file text object

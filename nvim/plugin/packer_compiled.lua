@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["feline.nvim"] = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/feline.nvim",
@@ -123,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
