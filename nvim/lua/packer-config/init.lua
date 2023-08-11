@@ -51,7 +51,8 @@ return require('packer').startup(function(use)
   -- Appearance
   use 'fladson/vim-kitty'
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-  use 'feline-nvim/feline.nvim'
+  -- use 'feline-nvim/feline.nvim'
+  use 'freddiehaddad/feline.nvim'
 
   -- Quality of life
   use {'ibhagwan/fzf-lua', requires = 'nvim-tree/nvim-web-devicons'}

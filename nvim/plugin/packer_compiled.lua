@@ -92,7 +92,7 @@ _G.packer_plugins = {
   ["feline.nvim"] = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/feline.nvim",
-    url = "https://github.com/feline-nvim/feline.nvim"
+    url = "https://github.com/freddiehaddad/feline.nvim"
   },
   ["fzf-lua"] = {
     loaded = true,
