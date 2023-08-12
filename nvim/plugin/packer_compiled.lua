@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
+  ["centerpad.nvim"] = {
+    loaded = true,
+    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/centerpad.nvim",
+    url = "https://github.com/smithbm2316/centerpad.nvim"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -168,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/vim-delve",
     url = "https://github.com/sebdah/vim-delve"
+  },
+  ["vim-fountain"] = {
+    loaded = true,
+    path = "/Users/jjeanbaptiste/.local/share/nvim/site/pack/packer/start/vim-fountain",
+    url = "https://github.com/kblin/vim-fountain"
   },
   ["vim-fugitive"] = {
     loaded = true,

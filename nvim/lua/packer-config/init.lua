@@ -67,6 +67,10 @@ return require('packer').startup(function(use)
   use 'vim-scripts/loremipsum' -- add lorem ipsum text
   use 'christoomey/vim-tmux-navigator' -- switch between tmux/vim panes/windows
 
+  -- Writing
+  use { 'smithbm2316/centerpad.nvim' }
+  use { 'kblin/vim-fountain' }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
