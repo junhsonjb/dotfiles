@@ -1,6 +1,7 @@
 local feline = require('feline')
 local vi_mode = require('feline.providers.vi_mode')
 local lsp_provider = require('feline.providers.lsp')
+local git = require('feline.providers.git')
 
 local ctp_feline = require('catppuccin.groups.integrations.feline')
 local colors = require("catppuccin.palettes").get_palette()
@@ -64,7 +65,6 @@ local mode = {
 
 local branch = {
     provider = function()
-        local git = require('feline.providers.git')
         local branch = git.git_branch()
         if #branch > 0 then
             return branch .. ' '
