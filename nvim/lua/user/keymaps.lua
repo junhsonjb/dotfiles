@@ -34,7 +34,8 @@ vim.keymap.set('n', '<leader>p', ':bp<CR>', { noremap = true })
 vim.keymap.set('n', '<leader>n', ':bn<CR>', { noremap = true })
 
 -- Quickly close buffers
-vim.keymap.set('n', '<leader>q', ':Sayonara!<CR>', { noremap = true })
+vim.keymap.set('n', '<leader>q', ':Sayonara<CR>', { noremap = true })
+vim.keymap.set('n', '<leader>c', ':Sayonara!<CR>', { noremap = true })
 
 -- View LSP errors for file
 vim.keymap.set('n', '<leader>x', ':TroubleToggle<CR>', { noremap = true })
