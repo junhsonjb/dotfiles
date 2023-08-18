@@ -12,6 +12,7 @@ end
 local packer_bootstrap = ensure_packer()
 
 -- For plugin-specific configs, see .config/nvim/lua/plugins/PLUGIN_NAME.lua
+-- (Note that if a plugin is super simple, I just won't write a config for it)
 
 return require('packer').startup(function(use)
   -- Packer
