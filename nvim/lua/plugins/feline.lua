@@ -105,6 +105,7 @@ local diff_removed = {
     hl = {
         fg = 'red'
     },
+    left_sep = ' ',
     right_sep = ' ',
 }
 
@@ -114,6 +115,7 @@ local diff_changed = {
     hl = {
         fg = 'yellow'
     },
+    left_sep = ' ',
     right_sep = ' ',
 }
 
@@ -187,6 +189,7 @@ local lsp = {
     hl = {
         fg = colors.crust,
         bg = colors.rosewater,
+        style = 'bold',
     }
 }
 
@@ -197,6 +200,7 @@ local position = {
     hl = {
         fg = colors.crust,
         bg = colors.rosewater,
+        style = 'bold',
     }
 }
 
