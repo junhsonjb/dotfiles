@@ -1,0 +1,29 @@
+# I probably could have looped thru all the files in ~/.config/zsh
+# but doing so would rob me of the implicit documentation that comes 
+# with specifying each config file being source'd in. This way, I can
+# read .zshrc and know where I need to go if I need to edit a certain file!
+
+DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Load in completion config
+source $DOTFILES/zsh/completion.zsh
+
+# Load in prompt config
+source $DOTFILES/zsh/prompt.zsh
+
+# Load in miscellaneous config (history, bindings, tab stuff, etc.)
+source $DOTFILES/zsh/misc.zsh
+
+# Load in shortcuts config (both aliases and functions)
+source $DOTFILES/zsh/aliasrc.zsh
+
+# Load in plugins config
+source $DOTFILES/zsh/plugins.zsh
+
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+
+# I don't think this is Figma specific, but I do think it needs to be at the 
+# bottom! (should probably fix this as some point -- put it in the right config
+# and source it at the bottom)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /home/junhson/code/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
