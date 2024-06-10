@@ -2,8 +2,9 @@
 # be source'd into ~/.zshrc (unless I've chosen to change the dotdir for zsh).
 
 # (TODO: add more aliases/functions for common git and aws-vault commands)
-
-source ~/.config/zsh/.figma/aliasrc.zsh
+# TODO: the aliases that go into `~/.config` are technically wrong, the real 
+# configuration stuff is stored inside of our dotfiles and then moved into 
+# the right directories whenever we install. Think about that and fix it!
 
 # Miscellaneous 
 # ---------------

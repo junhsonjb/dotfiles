@@ -3,7 +3,11 @@
 # with specifying each config file being source'd in. This way, I can
 # read .zshrc and know where I need to go if I need to edit a certain file!
 
-DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# this way of setting DOTFILES isn't working, see install script
+# TODO: set DOTFILES in a more central location to avoid redundancy!!!
+# DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+DOTFILES="$HOME/.dotfiles"
 
 # Load in completion config
 source $DOTFILES/zsh/completion.zsh
