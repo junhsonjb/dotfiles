@@ -30,4 +30,4 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 # bottom! (should probably fix this as some point -- put it in the right config
 # and source it at the bottom)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /home/junhson/code/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
