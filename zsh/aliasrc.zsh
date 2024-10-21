@@ -24,7 +24,6 @@ alias misc="vim ~/.config/zsh/misc.zsh"
 alias stuff="cd ~/stuff"
 alias vpm="cd ~/stuff/notes/velocity-post-mortems"
 alias config="cd ~/.config"
-alias tortilla="ssh junhson@192.168.1.67"
 alias kconf="vim ~/.config/kitty/kitty.conf"
 alias kc="kconf"
 
