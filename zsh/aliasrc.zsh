@@ -31,7 +31,7 @@ alias kc="kconf"
 # Functions
 # ---------------
 
-function weather() {
+weather() {
     city="$1"
     if [[ -z city ]];
     then
@@ -41,6 +41,34 @@ function weather() {
     eval "curl http://wttr.in/${city}"
 }
 
-function pdf() {
+pdf() {
     eval "/usr/local/lib/node_modules/afterwriting/awc.js --source $1 --pdf $2"
+}
+
+pr() {
+    git push -u origin $(branch_name)
+}
+
+pr_open() {
+    open "$(pr_url)"
+}
+
+branch_name() {
+    echo $(git branch --show-current 2>/dev/null || echo "")
+}
+
+org_name() {
+    local org
+    org=$(git config --get remote.origin.url 2>/dev/null | awk -F'[:/]' '{print $(NF-1)}')
+    echo "$org"  # Will print an empty string if no organization is found
+}
+
+repo_name() {
+    local repo
+    repo=$(git config --get remote.origin.url 2>/dev/null | awk -F'[/]' '{print $NF}' | sed 's/.git$//')
+    echo "$repo"  # Will print an empty string if no repository is found
+}
+
+pr_url() {
+    echo "https://github.com/$(org_name)/$(repo_name)/pull/new/$(branch_name)"
 }
