@@ -44,6 +44,11 @@ install_kitty() {
 	brew install --cask kitty
 }
 
+install_ghostty() {
+    echo "Installing ghostty..."
+    brew install ghostty
+}
+
 # zsh
 create_symlink "$DOTFILES/zsh/zshrc" "$HOME/.zshrc"
 
@@ -58,6 +63,10 @@ create_symlink "$DOTFILES/kitty" "$HOME/.config/kitty"
 # tmux
 install_program "tmux" "install_tmux"
 create_symlink "$DOTFILES/tmux" "$HOME/.config/tmux"
+
+# ghostty
+install_program "ghostty" "install_ghostty"
+create_symlink "$DOTFILES/ghostty" "$HOME/.config/ghostty"
 
 # todo
 # - make it work for non-zsh machines
