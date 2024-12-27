@@ -74,3 +74,8 @@ create_symlink "$DOTFILES/ghostty" "$HOME/.config/ghostty"
 # - auto install nvim dependencies (icons, etc.)
 # - install zsh-syntax-highlighting
 # - move $DOTFILES definition to more central place (avoid redundancy -- DRY)
+# - auto install stuff:
+#   - utilities like eza (`ls` replacement)
+#   - fonts you like (current fave is JetBrains Mono)
+#
+# ACUTALLY LOOK AT YOUR TODO list and CHECK THINGS OFF BRO
