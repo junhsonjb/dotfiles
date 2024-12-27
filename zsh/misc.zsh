@@ -28,3 +28,7 @@ export KEYTIMEOUT=1
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+# Remap FZF's CTRL-T to CTRL-F. This way, I'll be able to use it in nvim,
+# which uses CTRL-T to toggle a floating terminal
+bindkey "^f" fzf-file-widget
+

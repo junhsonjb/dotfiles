@@ -1,5 +1,6 @@
 local ntc = require('treesitter-context')
 
 ntc.setup {
-    separator = "-"
+    enable = true,
+    separator = "-",
 }

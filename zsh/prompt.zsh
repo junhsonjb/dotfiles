@@ -46,7 +46,8 @@ terraform_info() {
 
 indicator() {
     # echo "%B%F{red}%f%b "
-    echo "%B%F{red}$%f%b "
+    # echo "%B%F{red}$%f%b " # use '$' for machines with no nerd symbols
+    echo "%B%F{red}->%f%b "
 }
 
 time_now() {

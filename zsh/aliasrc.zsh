@@ -18,14 +18,12 @@ alias tconf="vim ~/.config/tmux/tmux.conf"
 alias aliasrc="vim ~/.config/zsh/aliasrc.zsh"
 alias arc="aliasrc"
 alias prompt="vim ~/.config/zsh/prompt.zsh"
-alias plugins="vim ~/.config/zsh/plugins.zsh"
-alias completion="vim ~/.config/zsh/completion.zsh"
 alias misc="vim ~/.config/zsh/misc.zsh"
-alias stuff="cd ~/stuff"
-alias vpm="cd ~/stuff/notes/velocity-post-mortems"
-alias config="cd ~/.config"
-alias kconf="vim ~/.config/kitty/kitty.conf"
-alias kc="kconf"
+alias kc="vim ~/.config/kitty/kitty.conf"
+
+# Trying out `eza` instead of `ls` -- seems like a pretty legit option
+alias ls="eza --icons=auto"
+alias tree="eza --tree"
 
 # Functions
 # ---------------
@@ -48,7 +46,7 @@ pr() {
     git push -u origin $(branch_name)
 }
 
-pr_open() {
+prl() {
     open "$(pr_url)"
 }
 

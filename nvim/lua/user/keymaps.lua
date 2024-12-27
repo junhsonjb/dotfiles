@@ -16,6 +16,9 @@ vim.keymap.set('n', '<leader>-', ':split<CR>', { noremap = true })
 vim.keymap.set('n', '<C-P>', ":lua require('fzf-lua').files()<CR>", { noremap = true })
 vim.keymap.set('t', '<C-P>', "<C-\\><C-n>:close<CR>", { noremap = true })
 
+-- Resume Last FZF Search
+vim.keymap.set('n', '<leader>r', ":lua require('fzf-lua').resume()<CR>", { noremap = true })
+
 -- Grep through codebase (starting from directory where vim was opened)
 vim.keymap.set('n', '<leader>g', ":lua require('fzf-lua').live_grep()<CR>", { noremap = true })
 
@@ -38,7 +41,7 @@ vim.keymap.set('n', '<leader>q', ':Sayonara<CR>', { noremap = true })
 vim.keymap.set('n', '<leader>c', ':Sayonara!<CR>', { noremap = true })
 
 -- View LSP errors for file
-vim.keymap.set('n', '<leader>x', ':TroubleToggle<CR>', { noremap = true })
+vim.keymap.set('n', '<leader>x', ':Trouble diagnostics toggle filter.buf=0 focus=true<CR>', { noremap = true })
 
 -- Open Buffer Manager
 vim.keymap.set('n', '<leader>b', ':FzfLua buffers<CR>', { noremap = true })
