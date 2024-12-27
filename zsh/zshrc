@@ -41,5 +41,6 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 #   --header 'Press CTRL-Y to copy command into clipboard'"
 
 # Load in work-specific shell configs
-source $DOTFILES/work/zsh/work.sh
-
+if [[ -d "$DOTFILES/work/zsh" ]]; then
+    source $DOTFILES/work/zsh/work.sh
+fi
