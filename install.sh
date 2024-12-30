@@ -77,5 +77,9 @@ create_symlink "$DOTFILES/ghostty" "$HOME/.config/ghostty"
 # - auto install stuff:
 #   - utilities like eza (`ls` replacement)
 #   - fonts you like (current fave is JetBrains Mono)
+#   - brew install findutils (so you can have gfind, needed for fzf file searching in nvinm)
+#   - install glow
+#   - install eza (ls alias dependency)
+#   - add more things to install
 #
 # ACUTALLY LOOK AT YOUR TODO list and CHECK THINGS OFF BRO
