@@ -81,5 +81,6 @@ create_symlink "$DOTFILES/ghostty" "$HOME/.config/ghostty"
 #   - install glow
 #   - install eza (ls alias dependency)
 #   - add more things to install
+#   - terminal slideshow application (pick one, leaning towareds presenterm)
 #
 # ACUTALLY LOOK AT YOUR TODO list and CHECK THINGS OFF BRO
