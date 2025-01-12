@@ -82,5 +82,7 @@ create_symlink "$DOTFILES/ghostty" "$HOME/.config/ghostty"
 #   - install eza (ls alias dependency)
 #   - add more things to install
 #   - terminal slideshow application (pick one, leaning towareds presenterm)
+#   - LSPs that you want on every machine you use!
+#       - maybe flags for the ones you want to install?? think about it
 #
 # ACUTALLY LOOK AT YOUR TODO list and CHECK THINGS OFF BRO

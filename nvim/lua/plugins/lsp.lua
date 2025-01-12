@@ -2,7 +2,7 @@
 -- is the code that takes this concept and allows us to programmatically
 -- apply it to several LSP servers in a reusable way)
 local nvim_lsp = require('lspconfig')
-local servers = { 'solargraph', 'gopls', 'pyright'}
+local servers = { 'solargraph', 'gopls', 'pyright', 'rust-analyzer'}
 
 local on_attach_fn = function(client, buf_number) 
 
