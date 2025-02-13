@@ -17,6 +17,8 @@ vim.opt.mouse = 'nv'
 vim.opt.number = true
 vim.opt.scrolloff = 8
 vim.opt.laststatus = 3
+vim.opt.guicursor = 'v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,n:blinkon100'
+vim.opt.relativenumber = true -- trying this out
 
 vim.cmd.colorscheme([[catppuccin-mocha]])
 
