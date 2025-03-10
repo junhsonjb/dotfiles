@@ -12,6 +12,7 @@ create_symlink() {
 
 	if [ -e "$target" ] || [ -L "$target" ]; then
 		echo "Removing existing file or directory: $target"
+		# TODO: instead of rm'ing, we should save to a backup
 		rm -rf "$target"
 	fi
 	ln -s "$source" "$target"
@@ -48,6 +49,9 @@ install_ghostty() {
     echo "Installing ghostty..."
     brew install ghostty
 }
+
+# install binaries from /bin
+create_symlink "$DOTFILES/bin" "$HOME/.local/bin"
 
 # zsh
 create_symlink "$DOTFILES/zsh/zshrc" "$HOME/.zshrc"
