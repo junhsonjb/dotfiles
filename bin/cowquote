@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# quote: print (mostly) sit-com quotes to the screen for fun
+#
+# A fun utility I wrote to work on my script-writing chops. I often manually pass funny quotes
+# into cowsay to serve as "screensavers" on terminal windows or tmux panes. This way, when I switch
+# on to them, I get a fun little kick. This was a fun way to automate the process and spice things
+# up.
+
+PROGRAM_NAME="${0##*/}"
+
+usage() {
+cat << __EOF__
+usage: $PROGRAM_NAME [option]
+Options:
+    -h | --help     show this help message
+    -t | --think    use cowthink
+    -s | --say      use cowsay (default, if installed)
+    -p | --plain    use echo (default, if cowsay is not installed)
+__EOF__
+}
+
+cmd="cowsay"  # default to cowsay
+
+while [[ -n "$1" ]]; do
+    case "$1" in
+        -h | --help)    usage
+                        exit 0
+                        ;;
+        -t | --think)   cmd="cowthink"
+                        ;;
+        -s | --say)     cmd="cowsay"
+                        ;;
+        -p | --plain)   cmd="echo"
+                        ;;
+        *)              usage
+                        exit 1
+    esac
+    shift
+done
+
+source quotes_src.sh
+
+length="${#QUOTES[@]}"
+index="$((RANDOM % length))"
+selection="${QUOTES[$index]}"
+
+if [[ ! -e "$(which cowsay)" ]]; then
+    echo "cowsay is not installed, defaulting to plain-mode"
+    echo "$selection"
+    exit 0
+fi
+
+$cmd "$selection"
