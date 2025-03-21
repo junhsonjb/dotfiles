@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# datefile: create a file named after the necessary date
+#
+# I name weekly reviews based on the date of the monday for that week. Monthly reviews
+# are named for that month. This script saves me from:
+# - checking the date for the week I'm about to record
+# - typing it out
+# - copying the template into the newly created file (or just doing a cp with the filename)
+#
+# It's a small script, but still super helpful. And good for getting into the habit of 
+# noticing and fixing workflow bugs!
+
+# TODO:
+# - use the script and take note of any deficiencies, then we can modify if needed
+# - until then, congrats -- you did it!
+
+PROGRAM_NAME="${0##*/}"
+
+usage() {
+cat << __EOF__
+usage: $PROGRAM_NAME [options]
+Options:
+    -h | --help     show this help message
+    -m | --month    generate the filename in month-year format (ex. mar-2025.md)
+__EOF__
+}
+
+month=false
+
+while [[ -n "$1" ]]; do
+    case "$1" in
+        -h | --help)            usage
+                                exit 0
+                                ;;
+        -m | --month)           echo "month-mode enabled"
+                                month=true
+                                ;;
+        *)                      usage
+                                exit 1
+    esac
+    shift
+done
+
+if [[ "$month" == "true" ]]; then
+    format="+%b-%Y"
+else
+    format="+%b-%d-%Y"
+fi
+
+file_base="$(date -v-monday "$format" | tr '[:upper:]' '[:lower:]')"
+filename="${file_base}.md"
+
+if [[ -e "template.md" ]]; then
+    cp template.md "$filename"
+else
+    touch "$filename"
+fi
