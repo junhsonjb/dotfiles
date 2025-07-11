@@ -66,7 +66,7 @@ return require('packer').startup(function(use)
   -- Miscellaneous
   use 'kana/vim-textobj-entire' -- entire file text object
   use 'vim-scripts/loremipsum' -- add lorem ipsum text
-  use 'christoomey/vim-tmux-navigator' -- switch between tmux/vim panes/windows
+  -- use 'christoomey/vim-tmux-navigator' -- switch between tmux/vim panes/windows
 
   -- Writing
   use { 'smithbm2316/centerpad.nvim' }
